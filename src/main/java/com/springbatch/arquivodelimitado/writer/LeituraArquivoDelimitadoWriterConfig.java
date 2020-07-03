@@ -22,6 +22,7 @@ public class LeituraArquivoDelimitadoWriterConfig {
 				.name("escritaArquivoDelimitadoWriter")
 				.resource(arquivoClientesSaida)
 				.delimited()
+				.delimiter(";")
 				.names("nome", "sobrenome", "idade", "email")
 				.build();
 	}
